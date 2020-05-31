@@ -20,7 +20,9 @@ return [
         ],
         // Use 'factories' for services provided by callbacks/factory classes.
         'factories'  => [
-            \App\Application\Http\Handler\TestHandler::class => \App\Application\Http\Handler\TestHandlerFactory::class
+            \App\Application\Http\Handler\TestHandler::class => \App\Application\Http\Handler\TestHandlerFactory::class,
+            Zend_Application::class => \App\Container\LegacyAppFactory::class,
+            \App\Application\Http\Middleware\LegacyAppMiddleware::class => \App\Container\LegacyAppMiddlewareFactory::class,
             // Fully\Qualified\ClassName::class => Fully\Qualified\FactoryName::class,
         ],
     ],

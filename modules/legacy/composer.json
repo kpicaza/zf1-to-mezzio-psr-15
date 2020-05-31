@@ -1,6 +1,6 @@
 {
-    "name": "zendframework/zendframework1",
-    "description": "Zend Framework 1",
+    "name": "my-site/app",
+    "description": "Zend Framework 1 legacy app",
     "type": "library",
     "keywords": [
         "framework",
